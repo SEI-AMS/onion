@@ -174,9 +174,9 @@ endif(GETTEXT_ENABLED)
 ##
 IF (${CMAKE_BUILD_TYPE} MATCHES "Debug")
 	add_definitions(-D__DEBUG__)
-	SET(CMAKE_C_FLAGS "-Wall -Werror -O0 -fPIC")
+	SET(CMAKE_C_FLAGS "-Wall -O0 -fPIC")
 ELSE (${CMAKE_BUILD_TYPE} MATCHES "Debug")
-	SET(CMAKE_C_FLAGS "-Wall -Werror -O2 -fPIC")
+	SET(CMAKE_C_FLAGS "-Wall -O2 -fPIC")
 ENDIF (${CMAKE_BUILD_TYPE} MATCHES "Debug")
 
 
